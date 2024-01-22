@@ -6,7 +6,7 @@ module.exports = class HmipBsm2 extends Accessory {
             .get('On', config.deviceAddress + ':4.STATE')
             .set('On', config.deviceAddress + ':4.STATE');
         this.addService('Lightbulb', config.name)
-            .get('On', config.deviceAddress + ':8.STATE')
-            .set('On', config.deviceAddress + ':8.STATE'); 
+            .get('On', config.deviceAddress + ':8.STATE')
+            .set('On', config.deviceAddress + ':8.STATE');
     }
 };
