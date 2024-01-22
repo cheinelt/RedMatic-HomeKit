@@ -413,9 +413,12 @@
                                 break;
                             case 'hmip-bsl':
                                 break;
-
                             case 'hmip-bsm':
                                 addChannels(addr, 4, 4, {type: switchTypes});
+                                break;
+                            case 'hmip-bs2‘:
+                                addChannels(addr, 4, 4, {type: switchTypes});
+                                addChannels(addr, 8, 8, {type: switchTypes});
                                 break;
 
                             case 'hmip-bwth':
